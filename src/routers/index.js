@@ -8,6 +8,7 @@ import HeroesList from '../views/heroes/List.vue'
 import EquipesList from '../views/equipes/List.vue'
 import WeaponsList from '../views/weapons/List.vue' 
 import HeroesAdd from '../views/heroes/Add.vue' 
+import HeroesEdit from '../views/heroes/Edit.vue' 
 
 // 注意:vue.use()要去注册VueRouter插件,否则不能使用
 //现在在全局范围内的组件内均可以使用,router相关标签等
@@ -22,6 +23,8 @@ const router = new VueRouter({
     {path : '/equipes', component:EquipesList},
     {path : '/weapons', component:WeaponsList},
     {path : '/heroes/add', component:HeroesAdd},
+    // props要允许外部向组件传递参数
+    {path : '/heroes/edit/:id', component:HeroesEdit, props:true}
   ],
   // 全局配置被匹配的时候应该激活的class,(只要包含路由名就算,非精确匹配),精确匹配应该再要添加Exact
   linkActiveClass:'active'

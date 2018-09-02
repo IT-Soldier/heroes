@@ -20,8 +20,9 @@
                         <td>{{item.name}}</td>
                         <td>{{item.gender}}</td>
                         <td>
-                            <a href="edit.html">edit</a>
-                            &nbsp;&nbsp;
+                            <!-- <a href="edit.html">edit</a> -->
+                            <!-- to属性不绑定的情况下,=后面全为字符串 -->
+                            <router-link :to="'/heroes/edit/'+ item.id">Edit</router-link>
                             <!-- 去阻止a标签的默认跳转行为 -->
                             <a href="javascript:;" @click.prevent="deleteHandel(item.id)">delete</a>
                         </td>
@@ -67,6 +68,9 @@ export default {
                     })
             },
             deleteHandel(id) {
+                if(!confirm('是否确认删除?')) {
+                    return;
+                }
                 axios
                     .delete(`http://localhost:3001/heroes/${id}`)
                     .then(response => {
