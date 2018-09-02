@@ -1,8 +1,17 @@
 <template>
   <div id="app">
     <!-- 此处为组件嵌套 -->
+    <!-- 头部 -->
     <app-header></app-header>
-    <app-siderbar></app-siderbar>
+    <div class="container-fluid">
+      <div class="row">
+        <app-siderbar></app-siderbar>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <!-- 路由占位 -->
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -30,3 +39,5 @@ export default {
 <style>
 
 </style>
+
+
