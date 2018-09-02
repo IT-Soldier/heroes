@@ -20,7 +20,8 @@
                         <td>
                             <a href="edit.html">edit</a>
                             &nbsp;&nbsp;
-                            <a href="javascript:window.confirm('Are you sure?')">delete</a>
+                            <!-- 去阻止a标签的默认跳转行为 -->
+                            <a href="javascript:;" @click.prevent="deleteHandel(item.id)">delete</a>
                         </td>
                     </tr>
                     <!-- 如果没有数据时,就显示下面的文字 -->
@@ -57,6 +58,18 @@ export default {
                             // 状态码为200时,即为数据请求成功
                             // console.log(response.data)
                             this.list = response.data;
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    })
+            },
+            deleteHandel(id) {
+                axios
+                    .delete(`http://localhost:3001/heroes/${id}`)
+                    .then(response => {
+                        if(response.status == 200) {
+                            this.loadData();
                         }
                     })
                     .catch(error => {
