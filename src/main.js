@@ -22,6 +22,10 @@ import router from './routers'
 // 给Vue的原型添加方法以实现axios的共用,而不是每个页面都要引入axios文件
 // $http是早期vue的resource中发请求的东西,借用其名称
 
+// axios的默认属性,用的时候会和剩下的地址进行拼接
+// 当项目上线以后,接口地址肯定不同,统一设置,避免了每个页面去修改地址
+axios.defaults.baseURL = 'http://localhost:3001/';
+
 Vue.prototype.$http = axios;
 new Vue({
   el: '#app',

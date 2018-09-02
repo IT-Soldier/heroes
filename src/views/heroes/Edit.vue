@@ -32,7 +32,7 @@ export default {
         editHandel() {
             // axios
             this.$http
-                .put(`http://localhost:3001/heroes/${this.id}`,this.formData)
+                .put(`heroes/${this.id}`,this.formData)
                 .then(response => {
                     // post添加数据成功,状态码为201
                     if(response.status === 200) {
@@ -49,7 +49,7 @@ export default {
         loadData() {
             // axios
             this.$http
-                .get(`http://localhost:3001/heroes/${this.id}`)
+                .get(`heroes/${this.id}`)
                 .then(response => {
                     if(response.status === 200) {
                         // 状态码为200时,即为数据请求成功

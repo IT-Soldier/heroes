@@ -56,7 +56,7 @@ export default {
             loadData() {
                 // axios
                 this.$http
-                    .get('http://localhost:3001/heroes')
+                    .get('heroes')
                     .then(response => {
                         if(response.status === 200) {
                             // 状态码为200时,即为数据请求成功
@@ -74,7 +74,7 @@ export default {
                 }
                 // axios
                 this.$http
-                    .delete(`http://localhost:3001/heroes/${id}`)
+                    .delete(`heroes/${id}`)
                     .then(response => {
                         if(response.status == 200) {
                             this.loadData();
