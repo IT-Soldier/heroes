@@ -2,14 +2,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 // 配置路由首先要引入,vue-router文件
-import VueRouter from 'vue-router'
+// import VueRouter from 'vue-router'
 
 // 使用bootstrap框架,导入全局的css样式
 import 'bootstrap/dist/css/bootstrap.css'
 // 引入自己的css样式
 import './assets/css/index.css'
 
-import axios from 'axios'
+// import axios from 'axios'
 
 //webpack会报字体的错,因为webpack打包默认只能识别js,要是别的文件类型,
 // 就需要配置相应的loader
@@ -24,9 +24,13 @@ import router from './routers'
 
 // axios的默认属性,用的时候会和剩下的地址进行拼接
 // 当项目上线以后,接口地址肯定不同,统一设置,避免了每个页面去修改地址
-axios.defaults.baseURL = 'http://localhost:3001/';
 
-Vue.prototype.$http = axios;
+
+// 引入MyHttp模块,注册插件,便于全局使用
+import MyHttp from './plugins/MyHttp.js';
+//调用插件对象的install方法
+Vue.use(MyHttp);
+
 new Vue({
   el: '#app',
   render: h => h(App),
