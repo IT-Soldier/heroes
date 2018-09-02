@@ -41,7 +41,7 @@
 
 <script>
 
-    import axios from 'axios';
+    // import axios from 'axios';
     // 查询操作
 export default {
     // 引入axios插件
@@ -54,7 +54,8 @@ export default {
         },
         methods : {
             loadData() {
-                axios
+                // axios
+                this.$http
                     .get('http://localhost:3001/heroes')
                     .then(response => {
                         if(response.status === 200) {
@@ -71,7 +72,8 @@ export default {
                 if(!confirm('是否确认删除?')) {
                     return;
                 }
-                axios
+                // axios
+                this.$http
                     .delete(`http://localhost:3001/heroes/${id}`)
                     .then(response => {
                         if(response.status == 200) {

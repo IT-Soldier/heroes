@@ -15,7 +15,7 @@
 
 <script>
 
-import axios from 'axios';
+// import axios from 'axios';
 export default {
     props : ['id'],
     // 相当于在data中添加了一个id
@@ -30,7 +30,8 @@ export default {
     },
     methods : {
         editHandel() {
-            axios
+            // axios
+            this.$http
                 .put(`http://localhost:3001/heroes/${this.id}`,this.formData)
                 .then(response => {
                     // post添加数据成功,状态码为201
@@ -46,7 +47,8 @@ export default {
                 })
         },
         loadData() {
-            axios
+            // axios
+            this.$http
                 .get(`http://localhost:3001/heroes/${this.id}`)
                 .then(response => {
                     if(response.status === 200) {

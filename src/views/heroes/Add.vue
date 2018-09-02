@@ -15,7 +15,7 @@
 
 <script>
 
-import axios from 'axios';
+// import axios from 'axios';
 
 
 export default {
@@ -30,7 +30,8 @@ export default {
     },
     methods : {
         addHandel() {
-            axios
+            // axios
+            this.$http
                 .post('http://localhost:3001/heroes',this.formData)
                 .then(response => {
                     // post添加数据成功,状态码为201
