@@ -3,219 +3,71 @@
         <h2 class="sub-header">英雄列表</h2>
         <a class="btn btn-success" href="add.html">Add</a>
         <div class="table-responsive">
-              <table class="table table-striped">
-              <thead>
-                  <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>操作</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-                  <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                  <td>
-                      <a href="edit.html">edit</a>
-                      &nbsp;&nbsp;
-                      <a href="javascript:window.confirm('Are you sure?')">delete</a>
-                  </td>
-                  </tr>
-              </tbody>
-              </table>
-          </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>英雄名称</th>
+                        <th>英雄性别</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(item, index) in list" :key="item.id">
+                        <td>{{index + 1}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.gender}}</td>
+                        <td>
+                            <a href="edit.html">edit</a>
+                            &nbsp;&nbsp;
+                            <a href="javascript:window.confirm('Are you sure?')">delete</a>
+                        </td>
+                    </tr>
+                    <!-- 如果没有数据时,就显示下面的文字 -->
+                    <tr>
+                        <!-- 注意行合并与列合并,是针对td,表格的 -->
+                    <td v-show="list.length==0" colspan="4" align="center">暂无数据显示</td>
 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 
 <script>
+
+    import axios from 'axios';
+    // 查询操作
 export default {
+    // 引入axios插件
+    // 依旧是个组件,组件即为Vue实例,是实例就可以使用相关方法
+    // 组件的data要求必须是个函数,且返回一个对象
+    data() {
+            return {
+                list : []
+            }
+        },
+        methods : {
+            loadData() {
+                axios
+                    .get('http://localhost:3001/heroes')
+                    .then(response => {
+                        if(response.status === 200) {
+                            // 状态码为200时,即为数据请求成功
+                            // console.log(response.data)
+                            this.list = response.data;
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error)
+                    })
+            }
+        },
+        mounted() {
+            // 选择在挂载之后去加载数据
+            this.loadData();
+        }
     
 }
 </script>
